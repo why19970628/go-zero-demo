@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package sub;
+
+message subReq {
+    int32 a = 1;
+    int32 b = 2;
+}
+
+message subResp {
+    int32 subResult = 1;
+}
+
+service suber {
+    rpc check(subReq) returns(subResp);
+}
