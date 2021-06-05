@@ -1,6 +1,6 @@
 FROM golang:alpine AS builder
 
-ADD ./ /data/app/
+ADD .. /data/app/
 WORKDIR /data/app/
 
 ENV GO111MODULE=on \
